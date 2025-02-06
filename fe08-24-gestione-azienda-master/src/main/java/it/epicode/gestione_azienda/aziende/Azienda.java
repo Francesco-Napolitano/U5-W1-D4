@@ -20,10 +20,13 @@ public class Azienda {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private  Long id;
 
+
     private String denominazione;
     private String partitaIva;
     @ManyToMany
     private List<Ufficio> uffici;
+
+
 
 
 }
